@@ -58,7 +58,7 @@ struct segment {
 			color1.interpolate(qpl::rgb::white, state.traits.lightness / 2);
 			color2.interpolate(qpl::rgb::white, state.traits.lightness / 2);
 		}
-		if (state.depth == state.info.max_depth) {
+		if (state.depth == state.info.stop_depth) {
 			thickness2 = 0;
 		}
 
